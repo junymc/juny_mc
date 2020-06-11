@@ -99,8 +99,19 @@ nav ul {
 .social {
   position: fixed;
   color: black;
-  margin-left: 70%;
+  margin-left: 75%;
+  margin-top: 5%;
+}
+.social ul {
+  display: flex;
+  list-style: none;
+}
 
+.social ul li {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 70px;
 }
 
 .footer {
