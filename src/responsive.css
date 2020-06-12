@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1200px) {
+    .social {
+        margin-left: 70%;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .social {
+        margin-left: 65%;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .social {
+        margin-left: 60%;
+    }
+}
