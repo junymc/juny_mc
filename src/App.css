@@ -119,13 +119,14 @@ nav ul {
 .social ul li {
   position: relative;
   display: block;
-  height: 60px;
-  width: 60px;
-  background-color: #171515;
-  line-height: 60px;
+  height: 50px;
+  width: 50px;
+  background-color: #C30B7F;
+  line-height: 47px;
   border-radius: 50%;
   margin: 0 15px;
   cursor: pointer;
+  transition: .5s;
 }
 
 .social ul li:before {
@@ -133,7 +134,7 @@ nav ul {
   content: '';
   top: 0;
   left: 0;
-  background: red;
+  background: #C30B7F;
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -141,8 +142,16 @@ nav ul {
   transform: scale(0.9);
 }
 
-.social ul li:after {
-  
+.social ul li:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgb(245, 137, 205);
+  filter: blur(3px);
+}
+
+.social ul li:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px rgb(245, 137, 205)F;
+  text-shadow: 0 0 15px rgb(245, 137, 205);
 }
 
 .footer {
