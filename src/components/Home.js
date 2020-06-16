@@ -14,6 +14,10 @@ class Home extends React.Component {
                 <p> I am Juny,</p>
                 <p>Web Developer.</p>
             </div>
+            <div className="about">
+                <p>Full stack developer | graphic designer</p>
+                <a target="_blank" href="https://gitconnected.com/junymc/resume"> Resume </a>
+            </div>
             </>
         )
     }

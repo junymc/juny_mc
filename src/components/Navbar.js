@@ -13,7 +13,6 @@ class Navbar extends React.Component {
                     <ul className="nav-links">
                        <li><Link to="/" style={navStyle}> Home </Link></li>
                        <li><Link to="/about" style={navStyle}>About me</Link></li>
-                       <li><Link to="/resume" style={navStyle}> Resume </Link></li>
                        <li><Link to="/portfolio" style={navStyle}> Portfolio</Link></li>
                        <li><Link to="/blog" style={navStyle}>Blog</Link></li>
                        <li><Link to="/contact" style={navStyle}>Contact</Link></li>

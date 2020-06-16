@@ -163,3 +163,22 @@ nav ul {
   color: black;
   text-align: center;
 }
+
+.about {
+  position: absolute;
+  width: 40em;
+  /* height: 50px; */
+  top: 70%;
+  left: 30%;
+  margin-left: -50px; 
+  transform: translateY(-30%);
+  font-size: 16px;
+  z-index: -1;
+}
+
+.about a {
+  text-decoration: none;
+  border: 1px solid #C30B7F;
+  line-height: 70px;
+  padding: 8px 16px;
+}
