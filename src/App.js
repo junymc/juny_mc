@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import About from './components/About'
 import './App.css';
 import './responsive.css';
 
@@ -14,6 +15,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
         </Switch>
         <Footer />
