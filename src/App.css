@@ -182,3 +182,36 @@ nav ul {
   line-height: 70px;
   padding: 8px 16px;
 }
+
+.text-zone {
+  width: 50%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 90%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 340;
+}
+
+.text-zone h1 {
+  color: #C30B7F;
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  margin-top: -40px;
+  left: 10px;
+}
+
+.text-zone p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
