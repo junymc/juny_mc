@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import About from './components/About'
+import Portfolio from './components/Portfolio'
 import './App.css';
 import './responsive.css';
 
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
           </Route>
         </Switch>
         <Footer />

@@ -184,9 +184,9 @@ nav ul {
 }
 
 .text-zone {
-  width: 50%;
+  width: 40%;
   position: absolute;
-  left: 10%;
+  left: 15%;
   top: 50%;
   transform: translateY(-50%);
   vertical-align: middle;
@@ -199,19 +199,37 @@ nav ul {
   font-weight: 340;
 }
 
-.text-zone h1 {
+.bigbox {
+  border: none;
+  padding: 150px 40px 40px;
+  max-width: 640px;
+}
+
+.bigbox h1 {
   color: #C30B7F;
+  font-family: 'Candal';
   font-size: 50px;
   font-weight: 900;
+  /* text-shadow: 3px 3px rgb(248, 195, 215); */
   position: absolute;
-  margin-top: -40px;
-  left: 10px;
+  margin-top: 10%;
+  left: 20%;
 }
 
 .text-zone p {
-  display: block;
+  /* display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-end: 0px; */
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 20px 30px 0 0;
+}
+
+.my-image {
+  display: block;
+  margin-left: 60%;
+  
 }
