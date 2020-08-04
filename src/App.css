@@ -234,24 +234,3 @@ nav ul {
   
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 20px;
-  padding-left: 150px;
-}
-
-.column a {
-  float: left;
-  padding-left: 110px;
-}
