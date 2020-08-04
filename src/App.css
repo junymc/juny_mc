@@ -238,16 +238,16 @@ nav ul {
   box-sizing: border-box;
 }
 
-/* .row::after {
+.row::after {
   content: "";
   clear: both;
   display: table;
-} */
+}
 
 .column {
   float: left;
   width: 50%;
-  padding: 40px;
+  padding: 20px;
   padding-left: 150px;
 }
 
