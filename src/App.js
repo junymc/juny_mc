@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Blog from './components/Blog'
 import './App.css';
 import './responsive.css';
 
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/portfolio">
             <Portfolio />
+          </Route>
+          <Route path="/blog">
+            <Blog />
           </Route>
         </Switch>
         <Footer />

@@ -32,7 +32,7 @@ const tileData = [
     },
     {
         title: "My Love Shoes", 
-        img: "https://i.imgur.com/6ZByXqS.png",
+        img: "https://i.imgur.com/hyJwBdY.png",
         link: "https://github.com/junymc/my-love-shoes"
     },
     {
