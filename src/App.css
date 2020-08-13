@@ -42,7 +42,7 @@
   position: absolute;
   width: 10em;
   /* height: 50px; */
-  top: 50%;
+  top: 45%;
   left: 30%;
   margin-left: -50px; 
   transform: translateY(-50%);
@@ -57,6 +57,25 @@
  .home :hover {
    color: #C30B7F;
  }
+
+ .title {
+  position: absolute;
+  width: 40em;
+  /* height: 50px; */
+  top: 63%;
+  left: 30%;
+  margin-left: -50px; 
+  transform: translateY(-30%);
+  font-size: 16px;
+  z-index: -1;
+}
+
+.title a {
+  text-decoration: none;
+  border: 1px solid #C30B7F;
+  line-height: 70px;
+  padding: 8px 16px;
+}
 
  .social {
    color: black;
@@ -84,7 +103,7 @@ nav ul {
   position: absolute;
   height: 210px;
   top: 32%;
-  margin-top: -120px;
+  margin-top: -30px;
   width: 100%;
 }
 
@@ -165,25 +184,6 @@ nav ul {
   font-weight: 250;
 }
 
-.title {
-  position: absolute;
-  width: 40em;
-  /* height: 50px; */
-  top: 70%;
-  left: 30%;
-  margin-left: -50px; 
-  transform: translateY(-30%);
-  font-size: 16px;
-  z-index: -1;
-}
-
-.title a {
-  text-decoration: none;
-  border: 1px solid #C30B7F;
-  line-height: 70px;
-  padding: 8px 16px;
-}
-
 .bigbox {
   overflow: auto;
   border: none;
@@ -220,6 +220,12 @@ nav ul {
 .my-image {
   display: block;
   margin-left: 60%; 
-  margin-top: 10%;
+  margin-top: 8%;
+}
+
+.blogLink {
+  font-size: 15px;
+  font-weight: 250;
+  position: bottom;
 }
 
