@@ -9,18 +9,20 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      overflow: 'hidden',
-      backgroundColor: theme.palette.background.paper,
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        backgroundColor: theme.palette.background.paper,
     },
     gridList: {
-      width: 700,
-      height: 550,
+        paddingTop: '3%',
+        paddingLeft: '7%',
+        width: 800,
+        height: 650,
     },
     icon: {
-      color: 'rgba(255, 255, 255, 0.54)',
+        color: 'rgba(255, 255, 255, 0.54)',
     },
   }));
 
@@ -53,7 +55,7 @@ export default function Portfolio() {
 
     return(
         <div className={classes.root}>
-            <GridList cellHeight={220} className={classes.gridList}>
+            <GridList cellHeight={250} className={classes.gridList}>
                 <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
                     <ListSubheader component="div">Projects</ListSubheader>
                 </GridListTile>

@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../Image.jpg'
+import MyPic from '../myself.jpg'
 
 class About extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class About extends React.Component {
                     <p>A Quick learner, a team player and responsible person who completes the job in time with a good quality of work.</p>
                 </div>
                 <div className="my-image">
-                    <img src={image} alt="image" height="520" width="400"/>
+                    <img src={MyPic} alt="myself" height="520" width="400"/>
                 </div>
             </div>
         )

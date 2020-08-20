@@ -16,7 +16,7 @@ class Home extends React.Component {
             </div>
             <div className="title">
                 <p>Full stack developer | graphic designer</p>
-                <a target="_blank" href="https://gitconnected.com/junymc/resume"> Resume </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://gitconnected.com/junymc/resume"> Resume </a>
             </div>
             </>
         )
