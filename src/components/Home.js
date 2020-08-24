@@ -10,9 +10,9 @@ class Home extends React.Component {
                 <Social />
             </div>
             <div className="home">
-                <p>Hello, </p>
-                <p> I am Juny,</p>
-                <p>Web Developer.</p>
+                <span className="home-main">Hello, </span>
+                <span className="home-sub1"> I am Juny,</span>
+                <span className="home-sub2">Web Developer.</span>
             </div>
             <div className="title">
                 <p>Full stack developer | graphic designer</p>

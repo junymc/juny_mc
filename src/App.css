@@ -22,10 +22,17 @@
       transform: translate(0);
   }
 }
+.home-main {
+  display: block;
+}
 
- p {
-   margin: 0;
- }
+.home-sub1 {
+  display: block;
+}
+
+.home-sub2 {
+  display: block;
+}
 
  .home :hover {
    color: #C30B7F;
@@ -33,12 +40,10 @@
 
  .title {
   position: absolute;
-  width: 40em;
-  top: 60%;
+  top: 59%;
   left: 30%;
   margin-left: -50px; 
   font-size: 16px;
-  z-index: -1;
 
   animation-name: moveInRight;
   animation-duration: 2.5s;
@@ -62,6 +67,7 @@
   border: 1px solid #C30B7F;
   line-height: 70px;
   padding: 8px 16px;
+  color: black;
 }
 
  .social {
@@ -195,20 +201,34 @@ nav ul {
 
 .bigbox h1 {
   color: #C30B7F;
-  font-family: 'Candal';
-  font-size: 50px;
-  font-weight: 900;
-  text-shadow: 3px 3px rgb(248, 195, 215);
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
   position: absolute;
-  margin-top: 10%;
-  left: 20%; 
+  top: 14%;
+  left: 15%;
 }
 
 .my-image {
   display: block;
   margin-left: 60%; 
   margin-top: 8%;
+  opacity: 80%;
+
+  animation-name: appear;
+  animation-duration: 3s;
 }
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
 
 .blogLink {
   font-size: 15px;
