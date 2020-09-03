@@ -34,6 +34,19 @@
     ]
   },
   "devDependencies": {
+    "node-sass": "^4.14.1",
     "react-social-icons": "^4.1.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junymc/juny_mc.git"
+  },
+  "author": "Juny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junymc/juny_mc/issues"
+  },
+  "homepage": "https://github.com/junymc/juny_mc#readme"
 }
