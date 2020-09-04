@@ -4,12 +4,24 @@ $color-balck: black;
 $color-shadow: rgb(255, 183, 213);
 $color-social: rgb(253, 84, 149);
 
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .home {
+    margin-left: 25%
+}
+
+.intro {
     position: absolute;
-    width: 10em;
     top: 30%;
-    left: 26%;
-    font-size: 60px;
+    font-size: 6rem;
     z-index: -1;
   
     animation-name: moveInLeft;
@@ -36,7 +48,7 @@ $color-social: rgb(253, 84, 149);
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     100% {
@@ -49,9 +61,7 @@ $color-social: rgb(253, 84, 149);
 .title {
     position: absolute;
     top: 59%;
-    left: 30%;
-    margin-left: -50px; 
-    font-size: 16px;
+    font-size: 1.6rem;
   
     animation-name: moveInRight;
     animation-duration: 2.5s;
@@ -59,9 +69,9 @@ $color-social: rgb(253, 84, 149);
 
     & a {
         text-decoration: none;
-        border: 1px solid $color-primary;
-        line-height: 70px;
-        padding: 8px 16px;
+        border: .1rem solid $color-primary;
+        line-height: 7rem;
+        padding: .8rem 1.6rem;
         color: $color-balck;
     }
 }
@@ -80,18 +90,16 @@ $color-social: rgb(253, 84, 149);
   
 #nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     overflow: auto;
     position: absolute;
-    width: 100px;
+    width: 10rem;
     height: 100%;
     float: left;
     background: $color-balck;
     color: $color-white;
     z-index: 3;
-  
+    font-size: 1.5rem;
 }
   
 nav ul {
@@ -99,8 +107,8 @@ nav ul {
     text-align: center;
     position: absolute;
     height: 210px;
-    top: 32%;
-    margin-top: -30px;
+    top: 30%;
+    // margin-top: %;
     width: 100%;
 }
   
@@ -133,12 +141,12 @@ nav ul {
         & li {
             position: relative;
             display: block;
-            height: 50px;
-            width: 50px;
+            height: 5rem;
+            width: 5rem;
             background-color: $color-primary;
-            line-height: 47px;
+            line-height: 4.7rem;
             border-radius: 50%;
-            margin: 0 15px;
+            margin: 0 1.5rem;
             cursor: pointer;
             transition: .5s;
         }
@@ -158,14 +166,14 @@ nav ul {
 
         & li:hover:before {
             transform: scale(1.2);
-            box-shadow: 0 0 15px $color-shadow;
+            box-shadow: 0 0 1.5rem $color-shadow;
             filter: blur(3px);
         }
 
         & li:hover {
             color: $color-social;
-            box-shadow: 0 0 15px $color-shadow;
-            text-shadow: 0 0 15px $color-shadow;
+            box-shadow: 0 0 1.5rem $color-shadow;
+            text-shadow: 0 0 1.5rem $color-shadow;
         }
     }
 }
@@ -188,7 +196,7 @@ nav ul {
     & h1 {
         color: $color-primary;
         font-family: 'Lato', sans-serif;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 700;
         position: absolute;
         top: 14%;
@@ -206,8 +214,8 @@ nav ul {
     display: table-cell;
     max-height: 90%;
     text-align: left;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     font-family: "Open Sans",sans-serif;
     font-weight: 340;
 }
@@ -232,9 +240,8 @@ nav ul {
     }
 }
   
-  
 .blogLink {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 250;
     
 }
