@@ -100,6 +100,13 @@ html {
         color: $color-primary;
         border: .1rem solid $color-primary;
         letter-spacing: .1rem;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-balck, .15);
+            transform: translateY(-3px);
+        }
     }
 }
   
@@ -249,21 +256,27 @@ html {
     &:not(:last-child) {
         //:not select choose everything except the element inside ()
         margin-bottom: $gutter-vertical;
+        margin-right: $gutter-horizontal;
     }
 
     @include clearfix;
 
-    [classNmae^="col-"] {
-        float: left;
+    // [classNmae^="col-"] {
+    //     float: left;
 
-        &:not(:last-child) {
-            margin-right: $gutter-horizontal;
-        }
-    }
+    //     &:not(:last-child) {
+    //         margin-right: $gutter-horizontal;
+    //     }
+    // }
 
     .col-1-of-2 {
         float: left;
         width: calc((100% - #{$gutter-horizontal}) / 2 );   
+    }
+
+    .col-1-of-4 {
+        float: left;
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
     }
 }
 
@@ -313,41 +326,11 @@ html {
         
     }
     
-
-   
-
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
    
 }
-
-
-
-
-// .text-zone {
-//     width: 40%;
-//     position: absolute;
-//     left: 15%;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     vertical-align: middle;
-//     display: table-cell;
-//     max-height: 90%;
-//     text-align: left;
-//     font-size: 1.6rem;
-//     line-height: 2rem;
-//     font-weight: 340;
-// }
-   
-// .my-image {
-//     // position: flex;
-//     margin-left: 55%;
-//     width: 100%;
-//     height: auto;
-    
-//     z-index: -1;
-  
-//     animation-name: appear;
-//     animation-duration: 3s;
-// }
   
 @keyframes appear {
     0% {
@@ -363,4 +346,54 @@ html {
     font-size: 1.5rem;
     font-weight: 250;
     
+}
+
+.blog-box {
+    margin-left: 12rem;
+    margin-top: 25%;
+    width: 65%;
+    height: 25rem;
+    text-align: right;
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-balck, .15);
+    transition: transform .2s;
+    
+    &__title {
+        text-align: center;
+        font-size: 1.6rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 1rem;
+    }
+
+    &__date {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    &__content {
+        text-align: center;
+        margin-bottom: 3rem;
+    }        
+    
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 3rem;  
+        font-size: 1.2rem;  
+        text-transform: uppercase; 
+        z-index: 20;  
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
 }
