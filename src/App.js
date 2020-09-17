@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio'
 import Blog from './components/Blog'
 import './App.css';
 import './responsive.css';
+import DesignProjects from './components/DesignProjects';
 
 function App() {
   return (
@@ -18,11 +19,14 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/about">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/portfolio">
+          <Route exact path="/portfolio">
             <Portfolio />
+          </Route>
+          <Route path="/portfolio/design_projects">
+            <DesignProjects />
           </Route>
           <Route path="/blog">
             <Blog />
