@@ -250,7 +250,8 @@ html {
 
 .row {
     max-width: $grid-width;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-left: 10rem;
     
 
     &:not(:last-child) {
@@ -269,6 +270,10 @@ html {
     //     }
     // }
 
+    // .col-1-of-4:last-child {
+    //     margin-right: 0rem;
+    // }
+
     .col-1-of-2 {
         float: left;
         width: calc((100% - #{$gutter-horizontal}) / 2 );   
@@ -277,6 +282,8 @@ html {
     .col-1-of-4 {
         float: left;
         width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+        margin-right: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -348,10 +355,13 @@ html {
     
 }
 
+.blog-boxes {
+    
+    padding-top: 7%;
+    padding-left: 13%;
+}
+
 .blog-box {
-    margin-left: 12rem;
-    margin-top: 25%;
-    width: 65%;
     height: 25rem;
     text-align: right;
     background-color: rgba($color-white, .8);
@@ -360,11 +370,12 @@ html {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-balck, .15);
     transition: transform .2s;
+    display: flex;
+    flex-direction: column;
     
     &__title {
         text-align: center;
         font-size: 1.6rem;
-        display: inline-block;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         background-clip: text;
         color: transparent;
@@ -372,7 +383,6 @@ html {
     }
 
     &__date {
-        display: inline-block;
         margin-bottom: 1.5rem;
         font-size: 1.2rem;
         font-weight: 300;
@@ -380,16 +390,16 @@ html {
 
     &__content {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: auto;
     }        
     
     &__link {
         text-decoration: none;
-        display: inline-block;
         padding-top: 3rem;  
         font-size: 1.2rem;  
         text-transform: uppercase; 
-        z-index: 20;  
+        z-index: 20;
+        margin-top: auto;
     }
 
     &:hover {
