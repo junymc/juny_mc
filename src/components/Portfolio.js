@@ -46,14 +46,14 @@ const projectsData = [
     },
     {
         title: "Party Planner", 
-        img: "https://i.imgur.com/6DSgkSh.jpg",
+        img: "https://i.imgur.com/8C6eqrL.jpg",
         link: "https://github.com/junymc/rails_project_party_planner",
         language: "Ruby On Rails, HTML, CSS",
         description: "Simple app that allows users to create a party as a host and attend parties as a guest"
     },
     {
         title: "Movie Review", 
-        img: "https://i.imgur.com/6DSgkSh.jpg",
+        img: "https://i.imgur.com/SARKy58.png",
         link: "https://github.com/junymc/sinatra-project-movie-review",
         language: "Ruby(Sinatra), HTML, CSS",
         description:"Content Management System (CMS) for tracking and management of the movie reviews from users"
@@ -82,14 +82,21 @@ export default function Portfolio() {
                             <div className="project__title">
                                 <span className="project__title-span">{project.title}</span>
                             </div>
-                            <div className="project__link">  
-                            <IconButton target="_blank" rel="noopener" href={project.link} >
-                                <GitHubIcon />
-                            </IconButton>
-                            </div>
+                            
                             <div className="project__language">{project.language}</div>
                         </div>
-                       
+                        <div className="project__side project__side--back">
+                            <div className="project__backside">
+                                <div className="project__description">
+                                    <span>{project.description}</span>
+                                </div>
+                                <div className="project__link">  
+                                    <IconButton target="_blank" rel="noopener" href={project.link} >
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             ))}  

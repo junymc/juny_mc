@@ -168,7 +168,7 @@ html {
   text-transform: uppercase;
   display: block;
   margin-bottom: 8rem;
-  background-image: linear-gradient(to right, #db61ae, #610b41);
+  background-image: linear-gradient(to right, #db61ae, #810152);
   background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -261,7 +261,7 @@ html {
   .blog-box__title {
     text-align: center;
     font-size: 1.6rem;
-    background-image: linear-gradient(to right, #db61ae, #610b41);
+    background-image: linear-gradient(to right, #db61ae, #810152);
     background-clip: text;
     color: transparent;
     margin-bottom: 1rem; }
@@ -296,9 +296,9 @@ html {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 30rem; }
+  height: 31rem; }
   .project__side {
-    height: 30rem;
+    height: 31rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -309,16 +309,20 @@ html {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .project__side--front {
-      background-color: white; }
+      background-color: black; }
+    .project__side--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, #db61ae, #C30B7F); }
   .project__img {
     background-size: cover;
-    height: 12rem;
+    background-repeat: no-repeat;
+    height: 13rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
   .project__title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 300;
     line-height: 4rem;
     text-transform: uppercase;
@@ -332,22 +336,32 @@ html {
       padding: .8rem 1rem;
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
-      background-image: linear-gradient(to right bottom, #db61ae, #C30B7F); }
+      background-image: linear-gradient(to right bottom, #C30B7F, #810152); }
   .project__language {
     font-size: 1.6rem;
     font-weight: 300;
-    text-align: center;
+    text-align: right;
     color: #C30B7F;
     position: absolute;
     top: 25rem;
     right: 2rem;
     width: 80%; }
-  .project__link {
-    text-transform: uppercase;
-    text-align: right;
-    text-decoration: none;
-    color: white;
+  .project:hover .project__side--front {
+    transform: rotateY(-180deg); }
+  .project:hover .project__side--back {
+    transform: rotateY(0); }
+  .project__backside {
     position: absolute;
-    top: 10rem;
-    right: 1rem;
-    width: 75%; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center; }
+  .project__description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: black;
+    text-align: center; }
+  .project__link {
+    padding-top: 3rem; }

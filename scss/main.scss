@@ -1,8 +1,9 @@
 $color-primary: #C30B7F;
 $color-primary-light: #db61ae;
-$color-primary-dark: #610b41;
+$color-primary-dark: #810152;
 $color-white: white;
 $color-black: black;
+$color-black-light: rgb(49, 49, 49);
 $color-shadow: rgb(255, 183, 213);
 $color-social: rgb(253, 84, 149);
 $about-image: url(../src/myself.jpg);
@@ -431,10 +432,10 @@ html {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 30rem;
+    height: 31rem;
     
     &__side {
-        height: 30rem;
+        height: 31rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -446,13 +447,21 @@ html {
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-color: $color-white;
+            background-color: $color-black;
+            // background-image: linear-gradient(to right, $color-black-light, $color-black);
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
         }
     }
 
+    //FRONT SIDE STYLING
     &__img {
         background-size: cover;
-        height: 12rem;
+        background-repeat: no-repeat;
+        height: 13rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
@@ -460,7 +469,7 @@ html {
     }
 
     &__title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 300;
         line-height: 4rem;
         text-transform: uppercase;
@@ -475,14 +484,14 @@ html {
             padding: .8rem 1rem;
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
         }  
     }
 
     &__language {
         font-size: 1.6rem;
         font-weight: 300;
-        text-align: center;
+        text-align: right;
         color: $color-primary;
         position: absolute;
         top: 25rem;
@@ -490,18 +499,39 @@ html {
         width: 80%;
     }
 
-    &__link {
-        text-transform: uppercase;
-        text-align: right;
-        text-decoration: none;
-        color: $color-white;
-        position: absolute;
-        top: 10rem;
-        right: 1rem;
-        width: 75%;
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
     }
 
-    // &:hover &__side--front {
-    //     transform: rotateY(-180deg);
-    // }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    //BACK SIDE STYLING
+    &__backside {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        color: $color-black;
+        text-align: center;
+    }
+
+    // &__link {
+    //     margin-bottom: 5rem;
+    // } 
+
+    
+
+    &__link {
+        padding-top: 3rem;
+    }
 }
