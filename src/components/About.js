@@ -8,7 +8,7 @@ class About extends React.Component {
         return (
             <section className="bigbox">
                 <div className="title-text">
-                    <h1>Junyoung McArdle</h1>
+                    <div className="title-text title-text--big">Junyoung McArdle</div>
                 </div>
                 
                 <div className="row">

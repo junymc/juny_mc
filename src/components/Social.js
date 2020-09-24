@@ -6,9 +6,9 @@ class Social extends React.Component {
         return (
             <div className="social">
                 <ul>
-                <li><SocialIcon url="http://linkedin.com/in/junyoung-mcardle" bgColor="#171515" /></li>
-                <li><SocialIcon url="https://www.facebook.com/junyoung.mcardle" bgColor="#171515" /></li>
-                <li><SocialIcon url="https://github.com/junymc" bgColor="#171515" /></li>
+                    <li><SocialIcon url="http://linkedin.com/in/junyoung-mcardle" bgColor="#171515" /></li>
+                    <li><SocialIcon url="https://www.facebook.com/junyoung.mcardle" bgColor="#171515" /></li>
+                    <li><SocialIcon url="https://github.com/junymc" bgColor="#171515" /></li>
                 </ul>
             </div>
         )

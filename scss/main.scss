@@ -2,7 +2,7 @@ $color-primary: #C30B7F;
 $color-primary-light: #db61ae;
 $color-primary-dark: #610b41;
 $color-white: white;
-$color-balck: black;
+$color-black: black;
 $color-shadow: rgb(255, 183, 213);
 $color-social: rgb(253, 84, 149);
 $about-image: url(../src/myself.jpg);
@@ -104,7 +104,7 @@ html {
         &:hover {
             background-color: $color-primary;
             color: $color-white;
-            box-shadow: 0 1rem 2rem rgba($color-balck, .15);
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
             transform: translateY(-3px);
         }
     }
@@ -130,7 +130,7 @@ html {
     width: 12rem;
     height: 100%;
     float: left;
-    background: $color-balck;
+    background: $color-black;
     color: $color-white;
     z-index: 3;
     font-size: 1.5rem;
@@ -154,7 +154,7 @@ html {
         line-height: 51px;
     
         & :hover {
-            color: $color-balck;
+            color: $color-black;
             background-color: $color-white;
         }
     }
@@ -163,7 +163,7 @@ html {
 .social {
     position: fixed;
     display: flex;
-    color: $color-balck;
+    color: $color-black;
     margin-left: 75%;
     margin-top: 5%;
     text-align: center;
@@ -215,11 +215,13 @@ html {
   
 .footer {
     position: fixed;
-    left: 0;
+    padding-left: 12rem;
+    transform: translate(-50%, -50%);
     bottom: 2%;
+    left: 50%;
     width: 100%;
     background-color: none;
-    color: $color-balck;
+    color: $color-black;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
@@ -234,17 +236,23 @@ html {
 .title-text {
     text-align: center;
     margin-bottom: 5rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8rem;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .3s;
 
-    & h1 {
+    &--big {
         font-size: 6rem;
-        text-transform: uppercase;
         font-weight: 700;
-        display: inline-block;
-        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-        background-clip: text;
-        color: transparent;
-        letter-spacing: .2rem;
-        transition: all .3s;
+    }
+
+    &--medium {
+        font-size: 4rem;
+        font-weight: 300;
     }
 }
 
@@ -302,7 +310,7 @@ html {
 
     &__photo {
         width: 50%;
-        box-shadow: 0 1.5rem 4rem rgba($color-balck, .4);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
@@ -327,7 +335,7 @@ html {
         &:hover {
             outline: .2rem solid $color-primary;
             transform: scale(1.05);
-            box-shadow: 00 2.5rem 4rem rgba($color-balck, .5);
+            box-shadow: 00 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
         
@@ -368,7 +376,7 @@ html {
     font-size: 1.5rem;
     padding: 2.5rem;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-balck, .15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .2s;
     display: flex;
     flex-direction: column;
@@ -406,4 +414,94 @@ html {
         transform: translateY(-1.5rem) scale(1.03);
     }
 
+}
+
+.heading {
+    padding-left: 12rem;
+    font-size: 2rem;;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.project {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 30rem;
+    
+    &__side {
+        height: 30rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: $color-white;
+        }
+    }
+
+    &__img {
+        background-size: cover;
+        height: 12rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 4rem;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-black;
+        position: absolute;
+        top: 15rem;
+        right: 2rem;
+        width: 75%;
+        
+        &-span {
+            padding: .8rem 1rem;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+        }  
+    }
+
+    &__language {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+        color: $color-primary;
+        position: absolute;
+        top: 25rem;
+        right: 2rem;
+        width: 80%;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        text-align: right;
+        text-decoration: none;
+        color: $color-white;
+        position: absolute;
+        top: 10rem;
+        right: 1rem;
+        width: 75%;
+    }
+
+    // &:hover &__side--front {
+    //     transform: rotateY(-180deg);
+    // }
 }
