@@ -16,21 +16,16 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route exact path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/portfolio/design_projects">
-            <DesignProjects />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
+          <Route exact path="/" component={Home} />
+          
+          <Route path="/about" component={About} />
+          
+          <Route exact path="/portfolio" component={Portfolio} />
+          
+          <Route path="/portfolio/design_projects" component={DesignProjects} />
+         
+          <Route path="/blog" component={Blog} />
+          
         </Switch>
         <Footer />
       </div>
