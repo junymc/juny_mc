@@ -10,7 +10,7 @@ class About extends React.Component {
                 <div className="title-text">
                     <div className="title-text title-text--big">Junyoung McArdle</div>
                 </div>
-                
+
                 <div className="row">
                     <div className="col-1-of-2">
                         <p className="paragraph">Full stack web developer with a background in customer service and transitioned career from sales to software engineering. Also have combined creative skills from a background in art and graphic design, passionate about creating artistic work with strong visual sense and creativity.</p>
@@ -19,9 +19,9 @@ class About extends React.Component {
                     </div>
                     <div className="col-1-of-2">
                         <div className="composition">
-                            <img src={Photo2} alt="Photo 1" className="composition__photo composition__photo--p1"/>
-                            <img src={Photo3} alt="Photo 1" className="composition__photo composition__photo--p2"/>
-                            <img src={Photo1} alt="Photo 1" className="composition__photo composition__photo--p3"/>
+                            <img src={Photo2} alt="selfie 2" className="composition__photo composition__photo--p1" />
+                            <img src={Photo3} alt="selfie 3" className="composition__photo composition__photo--p2" />
+                            <img src={Photo1} alt="selfie 1" className="composition__photo composition__photo--p3" />
                         </div>
                     </div>
                 </div>
@@ -30,4 +30,4 @@ class About extends React.Component {
     }
 }
 
-export default About ;
+export default About;

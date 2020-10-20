@@ -344,7 +344,7 @@ html {
     color: #C30B7F;
     position: absolute;
     top: 25rem;
-    right: 2rem;
+    right: 1rem;
     width: 80%; }
   .project:hover .project__side--front {
     transform: rotateY(-180deg); }
