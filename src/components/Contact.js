@@ -15,27 +15,27 @@ export default function Contact() {
     }
 
     return (
-        <div className="contact-box">
+        <div className="bigbox">
             <form onSubmit={sendEmail}>
-                <div className="form-container">
-                    <div className="form">
-                        <label>Name</label>
-                        <input type="text" className="form-box" placeholder="Name" name="name" required />
+                <div className="contact-box">
+                    <h1 className="contact-title">Contact Me</h1>
+                    <div className="form-container">
+                        <div className="form">
+                            <input type="text" className="form--box" placeholder="Name" name="name" required />
+                        </div>
+                        <div className="form">
+                            <input type="email" className="form--box" placeholder="Email Address" name="email" required />
+                        </div>
+                        <div className="form">
+                            <input type="text" className="form--box" placeholder="Subject" name="subject" required />
+                        </div>
+                        <div className="form">
+                            <textarea className="form--box form--box__textarea" placeholder="Your Message" name="message" required />
+                        </div>
+
                     </div>
-                    <div className="form">
-                        <label>Email</label>
-                        <input type="email" className="form-box" placeholder="Email Address" name="email" required />
-                    </div>
-                    <div className="form">
-                        <label>Subject</label>
-                        <input type="text" className="form-box" placeholder="Subject" name="subject" required />
-                    </div>
-                    <div className="form">
-                        <label>Message</label>
-                        <textarea className="form-box" placeholder="Your Message" name="message" required />
-                    </div>
-                    <div className="button">
-                        <input type="submit" value="Send" />
+                    <div className="submit">
+                        <input className="button" type="submit" value="Send" />
                     </div>
                 </div>
             </form>

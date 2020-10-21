@@ -23,6 +23,7 @@ $gutter-horizontal: 6rem;
 
 html {
     font-size: 62.5%;
+    // 10px is 0.625rem = 16px is 1rem
     
 }
 
@@ -527,5 +528,101 @@ html {
 
     &__link {
         padding-top: 3rem;
+    }
+}
+
+.contact-box {
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    background-color: $color-black;
+    letter-spacing: .1rem;
+    border-radius: 3px;
+}
+
+.contact-title {
+    color: $color-primary;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.form-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    line-height: 7rem;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+}
+
+.form {
+    display: block;
+
+    ::placeholder {
+        color: $color-black;
+        opacity: 1;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: $color-black;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: $color-black;
+      }
+
+    input:focus::placeholder {
+        color: transparent;
+    }
+
+    textarea:focus::placeholder {
+        color: transparent;
+    }
+
+
+    &--box {
+        position: relative;
+        width: 50%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+        text-align: left;
+        padding-bottom: 1.6rem;
+
+        
+
+        &__textarea {
+            margin-top: 4rem;
+            padding-bottom: 0;
+        }
+    }
+
+}
+
+.submit {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    background-color: $color-black;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    padding: .5rem 2rem .5rem 2rem;
+
+    &:hover {
+        transform: scale(1.08);
+        background-color: $color-primary;
+        color: $color-white;
     }
 }
